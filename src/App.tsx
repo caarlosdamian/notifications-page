@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import { Home } from "./pages/home/Home";
+import "./index.scss";
 
 function App() {
   return (
-    <div className="App">
-      App
+    <div className="app">
+      <Home />
     </div>
   );
 }
