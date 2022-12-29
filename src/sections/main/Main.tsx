@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NotificationItem } from "../../components/notificationItem/NotificationItem";
-import { data, itemInterface } from "../../utils/utils";
+import { NotificationContext } from "../../context/notificationContext";
+import { itemInterface } from "../../utils/utils";
 import "./Main.scss";
 
 export const Main = () => {
+  const notifications = useContext(NotificationContext);
+
   return (
     <main className="notification-container">
-      {data.map((item: itemInterface) => (
+      {notifications.map((item: itemInterface) => (
         <NotificationItem key={item.id} {...item} />
       ))}
     </main>
