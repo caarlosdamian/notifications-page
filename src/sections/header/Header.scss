@@ -5,6 +5,11 @@
   gap: 74px;
   padding: 24px 16px;
 
+  @media (min-width: 800px) {
+    justify-content: space-between;
+    padding: 32px;
+  }
+
   .left-container {
     display: flex;
     align-items: center;

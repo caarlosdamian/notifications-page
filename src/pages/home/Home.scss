@@ -4,4 +4,9 @@
   border-radius: 15px;
   width: 100vw;
   height: 100%;
+
+  @media (min-width: 800px) {
+    width: 730px;
+    height: 839px;
+  }
 }

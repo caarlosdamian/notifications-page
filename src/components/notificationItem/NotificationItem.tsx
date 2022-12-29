@@ -8,7 +8,7 @@ export const NotificationItem = (item: itemInterface) => {
       className={`notification-wrapper ${item.read === false && "unread"}`}
     >
       <div className="notification-left-container">
-        <img className="notification-img" src={item.avatar} alt="" />
+        <img className="notification-img" src={item.avatar} alt={`${item.name}-avatar`} />
       </div>
       <div className="notification-middle-container">
         <div
@@ -31,7 +31,7 @@ export const NotificationItem = (item: itemInterface) => {
       </div>
       {item.secondImg !== "" && (
         <div className="notification-right-container">
-          {<img src={item.secondImg} alt="" className="second-img" />}
+          {<img src={item.secondImg} alt="second-img" className="second-img" />}
         </div>
       )}
     </section>
