@@ -1,0 +1,39 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+  padding: 24px 16px;
+
+  .left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    .left-label {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #1c202b;
+    }
+
+    .left-number {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+      background: #0a327b;
+      border-radius: 6px;
+      padding: 2px 11px;
+    }
+  }
+
+  .right-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #5e6778;
+  }
+}
