@@ -67,5 +67,26 @@
         color: #939cad;
       }
     }
+
+    .notification-middle-message {
+      background: #ffffff;
+      border: 1px solid #dde7ee;
+      border-radius: 5px;
+      padding: 16px;
+      margin-top: 12px;
+      .notification-message {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #5e6778;
+      }
+    }
+  }
+
+  .notification-right-container {
+    .second-img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
