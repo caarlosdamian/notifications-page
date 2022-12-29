@@ -1,11 +1,11 @@
-import Mark from "src/assets/images/avatar-mark-webber.webp";
-import Angela from "src/assets/images/avatar-angela-gray.webp";
-import Anna from "src/assets/images/avatar-anna-kim.webp";
-import Jacob from "src/assets/images/avatar-jacob-thompson.webp";
-import Kimberly from "src/assets/images/avatar-kimberly-smith.webp";
-import Nathan from "src/assets/images/avatar-nathan-peterson.webp";
-import Risky from "src/assets/images/avatar-rizky-hasanuddin.webp";
-import Chess from "src/assets/images/image-chess.webp";
+import Mark from "../assets/images/avatar-mark-webber.webp";
+import Angela from "../assets/images/avatar-angela-gray.webp";
+import Anna from "../assets/images/avatar-anna-kim.webp";
+import Jacob from "../assets/images/avatar-jacob-thompson.webp";
+import Kimberly from "../assets/images/avatar-kimberly-smith.webp";
+import Nathan from "../assets/images/avatar-nathan-peterson.webp";
+import Risky from "../assets/images/avatar-rizky-hasanuddin.webp";
+import Chess from "../assets/images/image-chess.webp";
 
 export const data = [
   {
@@ -18,7 +18,7 @@ export const data = [
     ismessage: false,
     message: "",
     secondImg: "",
-    time:'5m ago'
+    time: "5m ago",
   },
   {
     id: "2",
@@ -30,7 +30,7 @@ export const data = [
     ismessage: false,
     message: "",
     secondImg: "",
-    time:'5m ago'
+    time: "5m ago",
   },
   {
     id: "3",
@@ -38,11 +38,11 @@ export const data = [
     name: "Jacob Thompson",
     action: "has joined your group",
     hightlight: "Chess Club",
-    read: true,
+    read: false,
     ismessage: false,
     message: "",
     secondImg: "",
-    time:'1 day ago'
+    time: "1 day ago",
   },
   {
     id: "4",
@@ -52,9 +52,10 @@ export const data = [
     hightlight: "",
     read: true,
     ismessage: true,
-    message: "Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game.",
+    message:
+      "Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game.",
     secondImg: "",
-    time:'5 days ago'
+    time: "5 days ago",
   },
   {
     id: "5",
@@ -66,7 +67,7 @@ export const data = [
     ismessage: false,
     message: "",
     secondImg: Chess,
-    time:'1 week ago'
+    time: "1 week ago",
   },
   {
     id: "6",
@@ -78,7 +79,7 @@ export const data = [
     ismessage: false,
     message: "",
     secondImg: "",
-    time:'2 weeks ago'
+    time: "2 weeks ago",
   },
   {
     id: "7",
@@ -90,6 +91,19 @@ export const data = [
     ismessage: false,
     message: "",
     secondImg: "",
-    time:'1m ago'
+    time: "1m ago",
   },
 ];
+
+export interface itemInterface {
+  id: string;
+  avatar: string;
+  name: string;
+  action: string;
+  hightlight: string;
+  read: boolean;
+  ismessage: boolean;
+  message: string;
+  secondImg: string;
+  time: string;
+}
